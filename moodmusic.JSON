@@ -1,0 +1,113 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "mood music",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "stop mood music",
+                        "cancel mood music",
+                        "quit mood music",
+                        "cancel the request"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "what are the options"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop the music",
+                        "stop it"
+                    ]
+                },
+                {
+                    "name": "MyMoodIntent",
+                    "slots": [
+                        {
+                            "name": "Mood",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        " I feel {Mood}",
+                        "play",
+                        "continue the music",
+                        "stop the music",
+                        "continue",
+                        "stop",
+                        "MyMoodIntent play music",
+                        "play music",
+                        "play nostalgic music",
+                        "I'm feeling nostalgic",
+                        "I'm feeling like nostalgic",
+                        "change to nostalgic music",
+                        "change to angry music",
+                        "change to happy music",
+                        "change to sad music",
+                        "play angry music",
+                        "play sad music",
+                        "play happy music",
+                        "MyMoodIntent play happy music",
+                        "MyMoodIntent play sad music",
+                        "MyMoodIntent play angry music",
+                        "I'm angry",
+                        "MyMoodIntent I'm angry",
+                        "I am angry",
+                        "I am sad",
+                        "I am happy",
+                        "I'm happy",
+                        "MyMoodIntent I'm happy",
+                        "I'm sad",
+                        "MyMoodIntent I'm sad",
+                        "no",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.Color",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "nostalgic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "angry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "happy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sad"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
