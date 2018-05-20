@@ -90,11 +90,11 @@ def set_mood_in_session(intent, session):
     if mood == "sad":
         contents = urllib2.urlopen("http://56f66c9a.ngrok.io/?col=blue").read()
     elif mood == "angry":
-        contents = urllib2.urlopen("http://56f66c9a.ngrok.io/?col=red").read()
+        contents = urllib2.urlopen("http://56f66c9a.ngrok.io/?col=green").read()
     elif mood == "nostalgic":
         contents = urllib2.urlopen("http://56f66c9a.ngrok.io/?col=white").read()
     else:
-        contents = urllib2.urlopen("http://56f66c9a.ngrok.io/?col=green").read()
+        contents = urllib2.urlopen("http://56f66c9a.ngrok.io/?col=red").read()
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
