@@ -62,7 +62,7 @@ python change_song.py
 
 Run in terminal
 ```
-serverless deploy --aws-profile serverless
+serverless deploy --aws-profile serverless --region eu-west-1
 ```
 I use `--aws-profile serverless` because I have multiple profiles configured in `~/.aws/credentials`
 
